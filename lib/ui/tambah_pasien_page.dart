@@ -61,11 +61,10 @@ class TambahPasienPage extends StatelessWidget {
           firstDate: DateTime(1900),
           lastDate: DateTime.now(),
         );
-
         if (pickedDate != null) {
-          String formattedDate = "${pickedDate.day.toString().padLeft(2, '0')}-${pickedDate.month.toString().padLeft(2, '0')}-${pickedDate.year}";
-          controller.text = formattedDate;
-        }
+         String formattedDate = "${pickedDate.day.toString().padLeft(2, '0')}-${pickedDate.month.toString().padLeft(2, '0')}-${pickedDate.year}";
+         controller.text = formattedDate;
+       }
       },
     );
   }

@@ -58,17 +58,17 @@ class TambahPegawaiPage extends StatelessWidget {
       readOnly: true,
       onTap: () async {
         DateTime? pickedDate = await showDatePicker(
-          context: context,
-          initialDate: DateTime.now(),
-          firstDate: DateTime(1900),
-          lastDate: DateTime.now(),
-        );
-
-        if (pickedDate != null) {
-          String formattedDate = "${pickedDate.day.toString().padLeft(2, '0')}-${pickedDate.month.toString().padLeft(2, '0')}-${pickedDate.year}";
-          controller.text = formattedDate;
-        }
-      },
+        context: context,
+        initialDate: DateTime.now(),
+        firstDate: DateTime(1900),
+        lastDate: DateTime.now(),
+    );
+    
+    if (pickedDate != null) {
+        String formattedDate = "${pickedDate.day.toString().padLeft(2, '0')}-${pickedDate.month.toString().padLeft(2, '0')}-${pickedDate.year}";
+        controller.text = formattedDate;
+    }
+            },
     );
   }
 
