@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import '/ui/pegawai_page.dart';  // Import PegawaiPage
-import '/ui/pasien_page.dart';  // Import PasienPage
+import '/ui/pegawai_page.dart';  
+import '/ui/pasien_page.dart';
+import '/ui/beranda.dart';  
 
 void main() => runApp(const MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Klinik APP',
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Beranda(),
     );
   }
 }
@@ -23,7 +24,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Data Klinik"),
+      appBar: 
+      AppBar(title: const Text("Data Klinik"),
       titleTextStyle: const TextStyle(
         color: Colors.white,
         fontSize: 20,

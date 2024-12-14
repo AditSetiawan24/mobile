@@ -74,12 +74,47 @@ class _PegawaiDetailState extends State<PegawaiDetail> {  // Changed to State<Pa
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    print("Hapus pegawai: ${pegawai.nama}");
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: const Text('Yakin ingin menghapus data ini?'),
+                          content: Text('Anda yakin ingin menghapus data pegawai ${pegawai.nama}?'),
+                          actions: [
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context); // Close dialog
+                              },
+                              style: TextButton.styleFrom(
+                                backgroundColor: Colors.green,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                              child: const Text('Batal', style: TextStyle(color: Colors.white)),
+                            ),
+                            TextButton(
+                              onPressed: () {
+                                print("Hapus pegawai: ${pegawai.nama}");
+                                Navigator.pop(context); // Close dialog
+                              },
+                              style: TextButton.styleFrom(
+                                backgroundColor: Colors.red,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                              child: const Text('Ya', style: TextStyle(color: Colors.white)),
+                            ),
+                          ],
+                        );
+                      },
+                    );
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red,
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.red,
                   ),
-                  child: const Text('Hapus', style: TextStyle(color: Colors.white)),
+                  child: const Text('Hapus', style: TextStyle(color: Colors.white)
+                  ),
                 ),
               ],
             ),
