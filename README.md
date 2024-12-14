@@ -1,16 +1,26 @@
-# tugas5
+# How to use it?
 
-A new Flutter project.
+## Step By Step
+1. buat folder kosong
+2. masuk ke vs code
+3. klik file => open folder => pilih folder yang tadi sudah di buat
+4. klik titik tiga (di sebelah opsi Run) pojok kiri atas
+5. klik terminal => new terminal => paste command berikut :
+   ```sh
+   git clone https://github.com/AditSetiawan24/mobile.git
+   ```
+6. setelah selesai lalu paste command berikut :
+   ```sh
+   cd mobile
+   ```
+7. setelah itu paste command berikut :
+   ```sh
+   flutter pub get
+   ```
+8. selesai
+<h2 align="center">If You Want To Support Me, You Can Scan Here : 😊</h2>
+<div align="center">
+  <img height="200" src="https://i.ibb.co.com/5jLWPTH/Untitled-1-1.png"/>
+  <p align="center"> Saweria </p>
+</div>
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
