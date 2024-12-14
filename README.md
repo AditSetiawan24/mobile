@@ -18,7 +18,7 @@
    flutter pub get
    ```
 8. selesai
-<h2 align="center">If You Want Support Me, You Can Scan Here : 😊</h2>
+<h2 align="center">If You Want To Support Me, You Can Scan Here : 😊</h2>
 <div align="center">
   <img height="200" src="https://i.ibb.co.com/5jLWPTH/Untitled-1-1.png"/>
   <p align="center"> Saweria </p>
